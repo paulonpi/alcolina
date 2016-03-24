@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.paulo.alcolina.SecondActivity"
+    android:background="@color/fundoVerde">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor da Gasolina"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:textColor="@color/branco"
+        android:editable="true"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:src="@drawable/seta"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/campo_gasolina"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textColor="@color/branco"
+        android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor do Etanol"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:textColor="@color/branco"
+        android:editable="true"
+        android:layout_marginTop="60dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:src="@drawable/seta"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/campo_etanol"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:textColor="@color/branco"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CALCULAR"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorPrimary"
+        android:padding="15dp"
+        android:textColor="@color/branco"
+        android:onClick="calcular"/>
+</LinearLayout>
